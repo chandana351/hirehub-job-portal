@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import path from "node:path";
 
 export default defineConfig({
+  base: "/hirehub-job-portal/",
   resolve: {
     alias: {
       "lucide-react": path.resolve(__dirname, "src/components/icons.jsx"),
