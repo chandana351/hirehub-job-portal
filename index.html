@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HireHub Job Portal - Connecting Job Seekers with Employers. Explore a wide range of job opportunities, create your profile, and apply for your dream job today!  "
+    />
+    <script>
+      tailwind = {
+        config: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  50: "#eff6ff",
+                  100: "#dbeafe",
+                  500: "#2563eb",
+                  600: "#1d4ed8",
+                  700: "#1e40af"
+                },
+                ink: "#101828"
+              },
+              boxShadow: {
+                soft: "0 18px 60px rgba(15, 23, 42, 0.10)"
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "firebase/app": "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js",
+          "firebase/auth": "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js",
+          "firebase/firestore": "https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js"
+        }
+      }
+    </script>
+    <title>HireHub Job Portal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
